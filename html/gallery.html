@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/gallery.css">
+	<script type="text/javascript" src="../javascript/gallery.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<title>Gallery</title>
+	<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="row">
+			<div 	class="col-4" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  				<a href="index.html"  draggable="true" ondragstart="drag(event)" id="drag1"><img src="../Image-S/Logo1.png" width="88" height="71"></a>
+			</div>
+
+				<div class="col-4">
+			       	<ul>
+			           	<li class="list-item"> <a href="index.html" class="list-link">Home</a> </li>
+			           	<li class="list-item"> <a href="History.html" class="list-link" target="blank">History</a> </li>
+			           	<li class="list-item"> <a href="#" class="list-link">Models</a>
+			               	 <ul class="hidden">
+			                   	<li><a href="ModelS.html" class="list-link" target="blank">Model S</a> </li>
+			                </ul>
+			            </li>
+			            <li class="list-item"><a href="game.html" class="list-link" target="blank" > Galery </a> </li>
+			        </ul>
+		    	</div>
+		    	<div class="col-4" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	    	</div>
+	    </nav>
+	</header>
+<div class="row" id="change-color">
+	<div class="col-3"></div>
+	<div class="col-6">
+		<h2 class="quote">If you're trying to create a company, it's like baking a cake. You have to have all the ingredients in the right proportion. Elon Musk</h2>
+	</div>
+	<div class="col-3"></div>
+</div>
+<div class="row">
+	<div class="col-2"></div>
+	<div class="col-8" >
+		 <img id="slider" src="Image-S/Models1.jpg">
+  	</div>
+	<div class="col-2"></div>
+</div>
+<div class="row" id="ban">
+	<div class="col-2" id="transparent"></div>
+	<div class="col-8" id="change-color">
+		<a href="https://www.tesla.com/models/design" class="list-link" target="blank"> <h1 class="quote">Everyone has one.Buy a Tesla Car right now!</h1> </a>
+	</div>
+	<div class="col-2" id="transparent"></div>
+</div>
+<div class="row" >
+	<h1 id="title"> Zoom the image. </h1>
+</div>
+<figure id="zooom" class="zoom" onmousemove="zoom(event)" style="background-image: url(../Image-S/Models1_.jpg)">
+  <img src="../Image-S/Models1.jpg" />
+</figure>
+</body>
+</html>

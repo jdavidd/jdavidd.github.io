@@ -1,0 +1,352 @@
+* {
+  
+   
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.grid {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+    
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+/*---------background_video-------*/
+.bg {
+    position: fixed;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    z-index: -999;
+}
+
+/*-------dropdown menu------------*/
+nav{
+    margin: 50px;
+    display: block;
+
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+ul li{   
+    position: relative;
+    display: inline-block;
+    font: bold 12px/18px sans-serif;
+    background: transparent;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+ul li a:hover{
+    
+    color: #999;
+}
+
+ul li ul{
+
+    padding: 0;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    display: none;
+    visibility: hidden;
+    
+    : 0;
+}
+ul li ul li {
+    background: transparent;
+    font: bold 12px/18px sans-serif;
+    display: block;
+    padding: 10px 0px;
+    padding-bottom: 0px;
+    text-shadow: 0 -1px 0 #000;
+}
+
+ul li ul li a:hover { color: #999;}
+
+ul li:hover ul
+{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+   
+}
+ul li ul li:hover a { color: #999;display: block;}
+.list-item{
+    font-size: 13px;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    outline: 0 none;
+}
+.list-link{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 100%;
+    margin: 0 10px;
+    display: block;
+    height: 100%;
+    line-height: 1.25;
+    cursor: pointer;
+    transition: color 0.15s ease-in-out;
+    text-decoration: none;
+}
+/*-----------logo & contact------------*/
+#logo{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+
+}
+#b{
+    text-align: right;
+   
+}
+#b ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;s
+}
+#b ul li{
+    margin: 0;
+    padding: 0;
+}
+#title h1{
+    text-align: center;
+    margin: 50px;
+    color: #fff;
+    font-size: 40px;
+    line-height: 60px;
+}
+#footer {
+    position: fixed;
+    bottom: 0;
+    font-size: 0.65em; 
+    text-align: center;
+    display: block;
+    width: 100%; 
+    clear: both;
+    padding-top: 10px;  
+    color: #ccc;
+    background-color: transparent; 
+
+}
+#footer h3{
+    margin: 0;
+}
+@media only screen and (max-width: 767px){
+     .video-container{
+        display: none;
+     }
+     .bg{
+        display: none;
+     }
+     html, body{
+        height: 100%;
+     }
+    body{
+        background-image: url("videos/v.jpg");
+        background-position: center center;
+        background-repeat:  no-repeat;
+        background-attachment: fixed;
+        background-size:  cover;
+        background-color: #999;
+     }
+}
+@media only screen and (max-width: 767px){
+    nav{
+        margin: 10px;
+    }
+    ul li
+    {
+        position: relative;
+        margin: 10px;
+    }
+    nav  ul{
+       
+        position: absolute;
+        display: block;
+        left: 0;
+        right: 0;
+    }
+    nav ul li{
+            width: 100%; /*sa stea unele sub altele fiecare ocupa latimea maxima*/
+            float: none;
+        }
+    nav li ul{
+        position: static;
+    }
+    nav ul li ul li{
+        float: none;
+        margin: 0;
+        margin-top: 5px;
+        padding: 0;
+    }
+    /*----title----*/
+    #title{
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+    #title h1{
+        position: fixed;
+        margin: 0;
+        bottom: 50px;
+        left: 14.1px;
+        right: 14.1px;
+        margin-top: 10px;
+        font-size: 1.20em;
+    }
+    /*----contact-----*/
+    #b{
+        text-align: center;
+        width: 100%;
+        
+    }
+    #b a{
+        padding: 5px;
+    }
+    .contact{
+        width: 10%;
+    }
+    /*----logo----*/
+    #logo{
+        width: 25%;
+        display: block;
+        position: static;
+    }
+    #logoo{
+        margin-bottom: 5px;
+    }
+   
+}
+#testdrive{
+    background-color: #fff;
+    color: #000;
+    display: none ;
+    position:  absolute;
+    left: 180px;
+    top: 70px;
+}
+#form_title{
+    color: #000;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+#form_paragraph{
+    color: #000;
+    font-family: 'Open Sans',sans-serif;
+    text-align: center;
+}
+#forms{
+    background-color: #fff;
+    color: #000;
+    
+}
+#test{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#btn{
+
+    background-color: rgba(0,0,0,0.5);
+    min-width: 175px;
+    min-width: 130px;
+    font-size: 11px;
+    padding: 12px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+#selectp{
+    width: 100%;
+    height: 100%;
+}
+/*Clasa care ascunde intrebarile */
+.hide{  
+    display: none;
+
+}
+#term{
+    color: #000;
+    font-family: 'Raleway',sans-serif;
+    text-align: center;
+
+}
+#label_style{
+    color: #000;
+    font-family: 'Raleway',sans-serif;
+    text-align: center;
+}

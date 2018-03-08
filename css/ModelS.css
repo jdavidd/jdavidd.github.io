@@ -1,0 +1,558 @@
+* {
+
+
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html,body{
+    margin:0;
+    padding: 0;
+}
+.grid {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+#container{
+    background-color: #111;
+
+}
+.link{
+    color: white;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: bold;
+    font-size: 100%;
+    text-decoration: none;
+}
+#container{
+    margin: 0;
+}
+.menu{
+    text-align: center;
+    margin: 20px;
+    margin-right: 150px;
+    margin-bottom: 0;
+    padding: 0;
+}
+.menu li{
+    display: inline-block;
+    padding-left: 20px;
+
+}
+
+.second-menu h1{
+    color: #fff;
+    font-family: 'Lato',sans-serif;
+    font-weight: thin;
+
+}
+#first{
+    position: absolute;
+    z-index: -1;
+
+
+}
+#Models{
+    max-width: 100%;
+}
+
+#second h1{s
+    font-family: Open Sans,sans-serif;
+    font-size: 1.7em;
+    color: #fff;
+
+}
+#sub-menu{
+    margin: 30px;
+    padding: 0;
+}
+#sub-menu a{
+    font-family: Open Sans,sans-serif;
+    font-size: 0.9em;
+}
+#sub-menu li{
+    padding: 0;
+    padding-right: 10px;
+}
+#border{
+    border-bottom: 1px solid gray;
+}
+/*------------technic details-----------*/
+#technic{
+    margin-top:550px;
+}
+#technic h1{
+    text-align: center;
+    margin:0;
+    padding-right: 40px;
+    font-size: 1.7em;
+}
+#technic p{
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    font-family: 'Raleway', sans-serif;
+}
+/*--------------feature----------------*/
+#feature-description h4{
+
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+#descriptionL{
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+#descriptionR{
+     margin-right: auto;
+    margin-left: auto;
+    font-family: 'Raleway', sans-serif;
+
+}
+#descriptionL img,#descriptionR img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#descriptionL p,#descriptionR p{
+    padding: 10px;
+}
+
+/*-----------All drive section-------*/
+#all{
+    background-image: url("../Image-S/car.jpg");
+    width: 100%;
+    height: 500px;
+}
+#all h1{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -5px;
+}
+/*--------Safety paragraph & Touchscreen paragraph----------*/
+#safety h1, #touchscreen h1{
+    font-family: 'Open Sans', sans-serif
+    font-size: 1.7em;
+    text-align: center;
+}
+#safety p, #touchscreen p{
+    padding: 10px 0;
+    padding-left: 20px;
+    font-family: 'Raleway',sans-serif;
+}
+#video-safety, #video-touchscreen{
+    display: block;
+    margin:auto;
+    margin-top: 40px;
+    width: 410px;
+    height: 230px;
+}
+#leftspace{
+    margin-left: 70px;
+}
+#techno{
+    list-style: none;
+    padding: 0;
+    margin-right: 50px;
+}
+#technology li{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.first-col{
+    display: flex;
+    flex-direction: column;
+}
+.second-col{
+    display:flex;
+    flex-direction: column;
+}
+#touchscreen, #safety, #all{
+    margin-top: 40px;
+}
+#touchscreen iframe{
+    margin: 15px;
+}
+/*---------Animation-------------*/
+#animation{
+    background-image: url("../Image-S/car_a.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 350px;
+    width: 100%;
+}
+.wheel-container{
+    height: 247px;
+    margin: auto;
+    position: relative;
+    width: 555px;
+}
+.wheel-twentyone{
+    background-image: url('../Image-S/wheel.png');
+    animation: infinite-spining 250ms steps(6) infinite;
+
+}
+.wheel-front{
+
+    left: 53px;
+    width: 100%;
+
+}
+.wheel-rear{
+
+    right:72px;
+}
+.wheel-front, .wheel-rear{
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 49px;
+    height: 80px;
+    position: absolute;
+    width: 80px;
+}
+@keyframes infinite-spining {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+
+  }
+  to {
+     -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+
+  }
+}
+/*----------------Galery----------------*/
+/*
+#gallery{
+    width: 600px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin: 100px auto;
+    border:2px solid #000;
+}
+#navigation {
+    list-style: none;
+    margin:0;
+}
+#navigation{
+    list-style: none;
+    padding: 0;
+    margin:0;
+    float: left;
+}
+#navigation li{
+    padding: 0;
+    margin: 0;
+    float: left;
+    clear: both;
+}
+#navigation li a img{
+    display: block;
+    border:0;
+}
+#navigation li a {
+    display: block;
+}
+#full-picture{
+    width: 900px;
+    height: 400px;
+    overflow: hidden;
+    float: left;
+}
+*/
+/*---------second try----------*/
+body{
+    margin: 0px;
+    padding: 0px;
+}
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+.gallery-b{
+    margin-top: 20px;
+    margin-left: 90px;
+    margin-bottom: 150px;
+}
+.pop_up{
+    background-color: white;
+    width: 856px;
+    height: 400px;
+    float: none;
+    padding: 0px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.par{
+    padding: 10px 0;
+    padding-left: 20px;
+    font-family: 'Raleway',sans-serif;
+}
+#mybtn{
+
+}
+/*---------------Video---------*/
+#Video_Gallery
+{
+    margin-left: 90px;
+}
+#Video_Gallery p{
+    padding: 10px 0;
+    padding-left: 20px;
+    font-family: 'Raleway',sans-serif;
+}
+#Video_Gallert h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7em;
+    margin-right: auto;
+    margin-left: auto;
+}
+/*---------Go To Top--------*/
+#button {
+    position: fixed;
+    right: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    bottom: 20px;
+}
+#button a{
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+}
+/*---------Footer-----------*/
+#footer {
+    position: relative;
+    bottom: 10px;
+    font-size: 0.65em;
+    text-align: center;
+    display: block;
+    width: 100%;
+    clear: both;
+    padding-top: 10px;
+    color: #ccc;
+    background-color: transparent;
+    border-top: gray;
+
+}
+#footer h3{
+    margin: 0;
+    color: #000;
+
+}
+/*-------------Respponsive-----------*/
+
+@media only screen and (max-width: 767px){
+    html{
+        font-size: 2.5vw;
+    }
+    #second{
+        display: none;
+        visibility: hidden;
+     }
+    .menu{
+        float: right;
+        margin: 0;
+        margin-top: 70px;
+        margin-right: 50px;
+        text-align: center;
+        padding: 0;
+        display: flex;
+    }
+    .menu li{
+        padding: 0;
+        padding-right: 15px;
+    }
+    /*--------button go to top-----*/
+    #button{
+        margin: 0;
+        padding: 0;
+        right: -35px;
+    }
+    #button img{
+        width: 50%;
+    }
+    /*-------first section------*/
+    #technic{
+        margin: 0;
+        margin-top: 130px;
+    }
+    #technic p{
+        margin: 0;
+        padding: 0;
+        margin-top: 10px;
+    }
+    /*------First Image-------*/
+    #descriptionL img, #descriptionR img{
+        width: 100%;
+    }
+    /*-----All------*/
+    #all{
+        background-image:url('Image-S/car.jpg');
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position:center;
+        width: 100%;
+        height: 100px;
+        margin: 0;
+    }
+    #safety{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #safety p{
+        float: left;
+    }
+    #leftspace{
+        margin: 10px;
+    }
+     #video_safety{
+        width: 100%;
+    }
+    #video-safety{
+        width: 100%;
+        margin: 0;
+        border: 0;
+    }
+    /*------------Touchscreen------*/
+    #touchscreen{
+        display: flex;
+        flex-direction: column;
+    }
+    #touchscreen p{
+        margin: 0;
+        padding: 0;
+        padding-left: 15px;
+    }
+    #video-touchscreen{
+        width: 150%;
+        border: 0;
+    }
+    #full{
+        width: 100%;
+    }
+    /*--------gallery-------*/
+    .gallery-b{
+        margin:0;
+    }
+    div.gallery{
+        margin-left: 75px;
+        margin-right: auto;
+    }
+    /*------------Animation---------*/
+    #animation{
+        display: none;
+        visibility: hidden;
+    }
+    /*-----------Video-------------*/
+    #Self-Driving{
+        margin-top: 600px;
+
+     }
+    #Video_Gallery h1{
+        margin-left: 10px;
+    }
+    #Video_Gallery{
+        margin:0;
+    }
+    #Video_Gallery video{
+        width: 100%;
+        height: 150px;
+    }
+}

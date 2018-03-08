@@ -1,0 +1,179 @@
+.bold{
+	font-weight: bold;
+}
+/*-----------Menu-----------------*/
+nav{
+    margin: 50px;
+    display: block;
+ 
+
+}
+ul{
+	background-color: #330066;
+	border-radius: 20px;
+	background: red; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left, #26004d, #bf80ff); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #26004d, #bf80ff); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #26004d, #bf80ff); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #26004d , #bf80ff); /* Standard syntax */
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+ul li{   
+    position: relative;
+    display: inline-block;
+    font: bold 12px/18px sans-serif;
+    background: transparent;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+ul li a:hover{
+    
+    color: #000066;
+}
+
+.list-item{
+    font-size: 13px;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    outline: 0 none;
+}
+.list-link{
+    color: #999;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 100%;
+    margin: 0 10px;
+    display: block;
+    height: 100%;
+    line-height: 1.25;
+    cursor: pointer;
+    transition: color 0.15s ease-in-out;
+    text-decoration: none;
+}
+/*---------Go To Top--------*/
+#button {
+    position: fixed;
+    right: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    bottom: 0px;
+}
+#button a{
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+}
+/*-------------History-------------*/
+.History h1,.fund h1, .production h1{
+	font-family: 'Open Sans',sans-serif;
+	margin-left: 50px;
+
+}
+.History p, .fund p, .production p,.technology p, .modelss p{
+	font-family: 'Raleway',sans-serif;
+	margin-left: 80px;
+}
+.History h3, .fund h3,.production h3, .technology h3, .modelss h3,.Map h3{
+	font-family: 'Lato',sans-serif;
+	margin-left: 60px;
+
+}
+.History p{
+	column-count: 3;
+}
+#logo{
+	float: right;
+	margin-right: 30px;
+}
+.production{
+	margin-top: 20px;
+	margin-left: 30px;
+}
+table.ptable{
+	margin: 1em 0;
+	border: 1px solid #a2a9b1;
+	border-collapse: collapse;
+}
+.ptable{
+	margin-left: 50px;
+}
+.ptable tr:nth-child(even) {background: #CCC}
+.ptable tr:nth-child(odd) {background: #FFF}
+?
+#fig,#motor{
+	display: block;
+	float: right;
+	margin-right: 30px;
+}
+#clear{
+	clear: both;
+}
+#left{
+	float: left;
+}
+#right{
+	float: right;
+}
+#Manufacture{
+	clear: both;
+}
+.Map{
+	margin-left: 30px;
+
+}
+@media only screen and (max-width: 767px){
+    html{
+        font-size: 2.5vw;
+    }
+
+    h1{
+    	margin: 10px;
+    }
+    h3{
+    	margin: 20px;
+    }
+    p{
+    	margin:30px;
+    }
+     nav{
+        margin: 10px;
+    }
+    ul li
+    {
+        position: relative;
+        margin: 10px;
+    }
+    nav  ul{
+       
+        position: absolute;
+        display: block;
+        left: 0;
+        right: 0;
+    }
+    nav ul li{
+            width: 100%; /*sa stea unele sub altele fiecare ocupa latimea maxima*/
+            float: none;
+        }
+    nav li ul{
+        position: static;
+    }
+    nav ul li ul li{
+        float: none;
+        margin: 0;
+        margin-top: 5px;
+        padding: 0;
+    }
+    .History{
+    	margin-top: 40px;
+    }
+}
