@@ -255,7 +255,7 @@ ul li ul li:hover a { color: #999;display: block;}
         height: 100%;
      }
     body{
-        background-image: url(../videos/backgroundimage.jpg);
+        background-image: url(../videos/image.jpg);
         background-position: center center;
         background-repeat:  no-repeat;
         background-attachment: fixed;
