@@ -345,6 +345,10 @@ ul li ul li:hover a { color: #999;display: block;}
       margin:-60px;
     }
 }
+/*----------Formular-----------*/
+#test{
+  margin-left:50%;
+}
 #testdrive{
     background-color: #fff;
     color: #000;
@@ -369,11 +373,6 @@ ul li ul li:hover a { color: #999;display: block;}
     background-color: #fff;
     color: #000;
 
-}
-#test{
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
 }
 #btn{
 
