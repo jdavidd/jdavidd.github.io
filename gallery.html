@@ -9,28 +9,14 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<title>Gallery</title>
-	<script>
-function allowDrop(ev) {
-    ev.preventDefault();
-}
 
-function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-}
-
-function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
-}
-</script>
 </head>
 <body>
 	<header>
 		<nav>
 			<div class="row">
-			<div 	class="col-4" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-  				<a href="index.html"  draggable="true" ondragstart="drag(event)" id="drag1"><img src="../Image-S/Logo1.png" width="88" height="71"></a>
+			<div 	class="col-4" id="div1">
+  				<a href="index.html"  id="drag1"><img src="../Image-S/Logo1.png" width="88" height="71"></a>
 			</div>
 
 				<div class="col-4">
