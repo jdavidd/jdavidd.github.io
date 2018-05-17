@@ -211,6 +211,12 @@ ul li ul li:hover a { color: #999;display: block;}
     left: 30px;
 
 }
+#contact{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+
+}
 #b{
     text-align: right;
 
