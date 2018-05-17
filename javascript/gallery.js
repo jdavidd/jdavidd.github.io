@@ -41,7 +41,7 @@ function fadeoutimg(){
 		if(bannerr.style.opacity < 0)
 		{
 			clearInterval(idd);
-			imgg());
+			imgg();
 			y = 1;
 		}
 	},150);
@@ -94,23 +94,6 @@ function banner(){
 	      fadeout();
 	   }
 	},50);
-
-	/*
-	for(let i = 1;i <= 10; i++ )
-	{
-		setTimeout(function(){
-		var t = i/10;
-		bannerr.style.opacity =  t;
-		//alert(t);
-	   		if (bannerr.style.opacity >= 1)
-	   		{
-	      		fadeout();
-	   		}
-	   },1000);
-	}
-	*/
-
-
 
 }
 function zoom(e){
