@@ -31,7 +31,7 @@ function slideShow() {
     if (curIndex == imgArray.length) { curIndex = 0; }
     setTimeout(slideShow, imgDuration);
 }
-function fadeoutimg(){
+function fadeoutimg() {
 	var bannerr = document.getElementById("slider");
 	var y = 1;
 	var idd = setInterval(function(){
@@ -45,9 +45,8 @@ function fadeoutimg(){
 			y = 1;
 		}
 	},150);
-
 }
-function imgg(){
+function imgg() {
 	var bannerr = document.getElementById("slider");
 	bannerr.style.opacity = 0;
 	var x = 0.1;
@@ -62,6 +61,7 @@ function imgg(){
 	      fadeoutimg();
 	   }
 	},50);
+}
 
 function fadeout(){
 	var bannerr = document.getElementById("ban");
