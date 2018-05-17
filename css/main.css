@@ -70,6 +70,9 @@
     width: 100%;
 }
 /*---------background_video-------*/
+body {
+    overflow-x: hidden;
+}
 .bg {
     position: fixed;
     top: 50%;
