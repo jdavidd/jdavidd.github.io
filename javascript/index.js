@@ -133,6 +133,7 @@ function myFunction() {
         image.src ="../Image-S/tesla.png";
     }
 }
+/*
 function modify_navbar(){
 	var nav1 = document.getElementById("responsive1");
 	var nav2 = document.getElementById("responsive2");
@@ -144,12 +145,13 @@ function modify_navbar(){
 			nav2.classList.add("col-10");
 		}
 }
-
+*/
 function start(){
 	click();
 	generate_quiz();
 	onSubmitt();
 	myFunction();
-	modify_navbar();
+	//modify_navbar();
+
 }
 window.onload = start;
